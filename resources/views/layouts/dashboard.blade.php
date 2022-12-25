@@ -35,6 +35,22 @@
                                         </span>
                                     </a>
                                     <hr>
+                                    <ul class="sidebar-nav">
+                                        <li class="sidebar-item">
+                                            <a href="#eventMenu" data-toggle="collapse" aria-expanded="false" class="toggle-button collapsed sidebar-link text-light">
+                                                <i class="text-light align-middle me-2 fa-solid fa-calendar-days"></i>
+                                                <span class="align-middle pl-3">Event</span>
+                                            </a>
+                                            <ul class="collapse" id="eventMenu" style="">
+                                                <li class="sidebar-item">
+                                                    <a class="text-light" href="{{route('event.create')}}"> <span class="align-middle pl-3">Create Event</span></a>
+                                                </li>
+                                                <li class="sidebar-item">
+                                                    <a class="text-light" href="{{route('event.index')}}"> <span class="align-middle pl-3">List Event</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
