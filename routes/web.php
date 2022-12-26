@@ -19,7 +19,7 @@ use App\Http\Controllers\Front\FrontController;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.event');
 Route::group(['prefix' => '/dashboard', 'middleware' => 'auth'], function () {
-    Route::view('/', 'dashboard.home');
+    Route::view('/', 'dashboard.home')->name('dashboard');
     Route::resource('/event', EventController::class);
 });
 

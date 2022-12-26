@@ -16,7 +16,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="card px-3">
+                <div class="card">
                     <table class="table table-striped">
                         <thead>
                             <tr>

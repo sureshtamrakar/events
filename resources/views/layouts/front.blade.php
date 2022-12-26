@@ -13,24 +13,30 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="list-inline text-right pt-3">
-                    <li class="list-inline-item">
-                        <a class="text-dark" href="{{ route('login') }}">Login</a>
-                    </li>
-                </ul>
+    <div class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline text-right pt-3">
+                        <li class="list-inline-item">
+                            @if(Auth::check())
+                            <a class="text-light" href="{{ route('dashboard') }}">Dashboard</a>
+                            @else
+                            <a class="text-light" href="{{ route('login') }}">Login</a>
+                            @endif
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     @yield('content')
-    <footer class="footer fixed-bottom">
+    <footer class="footer fixed-bottom bg-secondary">
         <div class="container-fluid">
             <div class="row text-muted">
                 <div class="col-12 text-center">
-                    <p class="mb-2">
-                        <a href="#" target="_blank" class="text-muted"><strong>Event App</strong></a> ©
+                    <p class="my-3">
+                        <a href="#" target="_blank" class="text-light"><strong>Event App</strong></a> ©
                     </p>
                 </div>
             </div>
