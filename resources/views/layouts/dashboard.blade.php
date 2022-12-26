@@ -51,6 +51,11 @@
                                             </ul>
                                         </li>
                                     </ul>
+                                    <div class="border-top">
+                                        <div class="my-3 text-center">
+                                            <a class="text-light" href="{{route('front.event')}}" target="_blank"> Visit Site</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

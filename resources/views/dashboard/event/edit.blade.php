@@ -21,9 +21,7 @@
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label class="form-label">Description</label>
-                                    <textarea class="form-control form-control-lg @error('description') is-invalid @enderror" id="description" name="description">
-                                    {!!$event->description!!}    
-                                    </textarea>
+                                    <textarea class="form-control form-control-lg @error('description') is-invalid @enderror" id="description" name="description">{!!$event->description!!}</textarea>
                                     @error('description')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
