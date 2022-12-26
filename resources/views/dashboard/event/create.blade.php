@@ -13,15 +13,14 @@
                             <div class="row">
                                 <div class="mb-3 col-md-12">
                                     <label class="form-label">Title</label>
-                                    <input class="form-control form-control-lg @error('title') is-invalid @enderror" type="text" name="title" placeholder="Enter Event Title">
+                                    <input class="form-control form-control-lg @error('title') is-invalid @enderror" type="text" name="title" value="{{ old('title') }}" placeholder="Enter Event Title">
                                     @error('title')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label class="form-label">Description</label>
-                                    <textarea class="form-control form-control-lg @error('description') is-invalid @enderror" id="description" name="description" placeholder="Description">
-                                    </textarea>
+                                    <textarea class="form-control form-control-lg @error('description') is-invalid @enderror" id="description" name="description" placeholder="Description">{{old('description')}}</textarea>
                                     @error('description')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
